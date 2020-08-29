@@ -1,0 +1,21 @@
+$color1: #93B7BE;
+$color2: #542344;
+$color3: #BC9CB0;
+$color4: #F8C630;
+$color5: #596157; 
+
+$colors: 
+(blue: $color1, 
+violet: $color2, 
+rose: $color3, 
+yellow: $color4, 
+camo: $color5);
+
+
+    @each $name, $color in $colors {
+        .hr-#{$name}
+         {border: 1px solid $color;
+            width: 50%;
+            margin:auto;}
+    }
+

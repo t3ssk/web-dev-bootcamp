@@ -1,0 +1,190 @@
+@import "reset.scss";
+@import "hrloop.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Russo+One&display=swap');
+
+$font1: 'Russo One';
+$font2: 'Open Sans';
+
+
+body {
+    font-family: $font2;
+    font-size: 14px;
+    width: 100vw;
+}
+.photo-rounded{
+    width: 200px;
+    height:auto;
+    border-radius: 50%;
+    img{
+        max-width: 100%;
+        border-radius: 50%;
+        filter: grayscale(1) contrast(1.1);
+    }
+    
+}
+.photo-rounded::before{
+    content: ' ';
+    position: absolute;
+    background: rgb(147,183,190);
+    background: linear-gradient(51deg, rgba(147,183,190,1) 0%, rgba(188,156,176,1) 53%, rgba(248,198,48,1) 100%);
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 50%;
+}
+.info{
+    h1{
+        font-size: 3rem;
+        font-family: $font1;
+    }
+    h4 {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 1.1rem;
+    }
+}
+a{
+    text-decoration: none;
+    color: $color2;
+}
+a:hover{
+  color: $color2;
+  -webkit-box-shadow: inset 0px -15px 0px -9px $color4;
+  -moz-box-shadow: inset 0px -15px 0px -9px $color4;
+  box-shadow: inset 0px -15px 0px -9px $color4;
+  text-decoration: none;
+}
+$tborder: 1px solid $color2;
+.vzdelanitable{
+    width: 30vw;
+    margin: 5% 10px 0 30px;
+
+    cursor: crosshair;
+   
+    thead{
+        background-color: $color3;
+        padding: 5px;
+        font: {
+            size: 1.2rem;
+        }
+        
+    }
+    th {
+        padding: 5px;
+        border-bottom:$tborder;
+    }
+    tbody{
+        background-color: rgba(211, 207, 207, 0.171);
+        
+        padding: 5px; 
+        tr:hover{
+       background-color: white;
+       background: linear-gradient(51deg, rgba(147,183,190,0.3) 0%, rgba(188,156,176,0.3) 53%, rgba(248,198,48,0.3) 100%);
+   }
+   }
+   td{
+       padding: 5px;
+   }
+   .border-right{
+    border-right:$tborder;
+   }
+
+}
+
+.kurzytable{
+    
+    cursor: crosshair;
+    width: 30%;
+    margin: 5% 10px 0 30px;
+    thead{
+        background-color: $color1;
+        
+        th{padding: 5px;}
+    }
+    tbody{
+        td{
+            padding: 5px;
+            border-bottom: 1px solid rgb(230, 230, 230);
+        }
+    }
+    tr:hover{
+        background-color: $color2;
+        background: linear-gradient(51deg, rgba(147,183,190,0.3) 0%, rgba(188,156,176,0.3) 53%, rgba(248,198,48,0.3) 100%);
+    }
+
+}
+
+#coUmim{
+    border-left: 1px solid $color4;
+    padding-left: 10px;
+    position: absolute;
+    margin-top: -50%;
+    right: 40px;
+    line-height: 1.5;
+    h3{ 
+        text-transform: uppercase;
+        color: $color3;
+        font: {
+            weight: 400;
+            size:1.1rem;
+        }
+
+
+}
+h2{
+    color: $color1;
+    line-height: 1.5;
+    letter-spacing: 1.3;
+    font-family: $font1;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin:auto;
+    border-bottom: 2px solid $color3;
+}}
+
+#info{
+    height: 97.8vh;
+    line-height: 3;
+    color: rgb(240, 240, 240);
+    width: 34.1%;
+    position: absolute;
+    margin-top: -52%;
+    margin-left: 32%;
+    background-color: $color1;
+    padding-left: 1%;
+
+    #praczkusenosti{
+        margin: 40px 0px 40px 0;
+        
+        thead{
+            background-color: rgba(0, 0, 0, 0.322);
+            th{padding: 5px 40px 5px 40px;}
+        }
+        tbody{
+            background-color: rgba(0, 0, 0, 0.155);
+        td{padding: 5px 40px 5px 40px;}
+    }
+    top:-30px;
+}
+h3{
+    color: $color5;
+    width: 40%;
+    margin-bottom: 10px;
+    line-height: 1;
+    font-family: $font1;
+    font-size: 1.3;
+    -webkit-box-shadow: inset 0px -15px 0px -9px $color4;
+  -moz-box-shadow: inset 0px -15px 0px -9px $color4;
+  box-shadow: inset 0px -15px 0px -9px $color4;
+
+}}
+#id {margin: auto;
+    
+}
+
+
+i{
+        font-size: 3rem;
+    }

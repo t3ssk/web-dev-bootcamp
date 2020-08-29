@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Russo+One&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.hr-blue {
+  border: 1px solid #93B7BE;
+  width: 50%;
+  margin: auto; }
+
+.hr-violet {
+  border: 1px solid #542344;
+  width: 50%;
+  margin: auto; }
+
+.hr-rose {
+  border: 1px solid #BC9CB0;
+  width: 50%;
+  margin: auto; }
+
+.hr-yellow {
+  border: 1px solid #F8C630;
+  width: 50%;
+  margin: auto; }
+
+.hr-camo {
+  border: 1px solid #596157;
+  width: 50%;
+  margin: auto; }
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+  width: 100vw; }
+
+.photo-rounded {
+  width: 200px;
+  height: auto;
+  border-radius: 50%; }
+  .photo-rounded img {
+    max-width: 100%;
+    border-radius: 50%;
+    filter: grayscale(1) contrast(1.1); }
+
+.photo-rounded::before {
+  content: ' ';
+  position: absolute;
+  background: #93b7be;
+  background: linear-gradient(51deg, #93b7be 0%, #bc9cb0 53%, #f8c630 100%);
+  width: 200px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: 40px;
+  border-radius: 50%; }
+
+.info h1 {
+  font-size: 3rem;
+  font-family: "Russo One"; }
+
+.info h4 {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.1rem; }
+
+a {
+  text-decoration: none;
+  color: #542344; }
+
+a:hover {
+  color: #542344;
+  -webkit-box-shadow: inset 0px -15px 0px -9px #F8C630;
+  -moz-box-shadow: inset 0px -15px 0px -9px #F8C630;
+  box-shadow: inset 0px -15px 0px -9px #F8C630;
+  text-decoration: none; }
+
+.vzdelanitable {
+  width: 30vw;
+  margin: 5% 10px 0 30px;
+  cursor: crosshair; }
+  .vzdelanitable thead {
+    background-color: #BC9CB0;
+    padding: 5px;
+    font-size: 1.2rem; }
+  .vzdelanitable th {
+    padding: 5px;
+    border-bottom: 1px solid #542344; }
+  .vzdelanitable tbody {
+    background-color: rgba(211, 207, 207, 0.171);
+    padding: 5px; }
+    .vzdelanitable tbody tr:hover {
+      background-color: white;
+      background: linear-gradient(51deg, rgba(147, 183, 190, 0.3) 0%, rgba(188, 156, 176, 0.3) 53%, rgba(248, 198, 48, 0.3) 100%); }
+  .vzdelanitable td {
+    padding: 5px; }
+  .vzdelanitable .border-right {
+    border-right: 1px solid #542344; }
+
+.kurzytable {
+  cursor: crosshair;
+  width: 30%;
+  margin: 5% 10px 0 30px; }
+  .kurzytable thead {
+    background-color: #93B7BE; }
+    .kurzytable thead th {
+      padding: 5px; }
+  .kurzytable tbody td {
+    padding: 5px;
+    border-bottom: 1px solid #e6e6e6; }
+  .kurzytable tr:hover {
+    background-color: #542344;
+    background: linear-gradient(51deg, rgba(147, 183, 190, 0.3) 0%, rgba(188, 156, 176, 0.3) 53%, rgba(248, 198, 48, 0.3) 100%); }
+
+#coUmim {
+  border-left: 1px solid #F8C630;
+  padding-left: 10px;
+  position: absolute;
+  margin-top: -50%;
+  right: 40px;
+  line-height: 1.5; }
+  #coUmim h3 {
+    text-transform: uppercase;
+    color: #BC9CB0;
+    font-weight: 400;
+    font-size: 1.1rem; }
+  #coUmim h2 {
+    color: #93B7BE;
+    line-height: 1.5;
+    letter-spacing: 1.3;
+    font-family: "Russo One";
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: auto;
+    border-bottom: 2px solid #BC9CB0; }
+
+#info {
+  height: 97.8vh;
+  line-height: 3;
+  color: #f0f0f0;
+  width: 34.1%;
+  position: absolute;
+  margin-top: -52%;
+  margin-left: 32%;
+  background-color: #93B7BE;
+  padding-left: 1%; }
+  #info #praczkusenosti {
+    margin: 40px 0px 40px 0;
+    top: -30px; }
+    #info #praczkusenosti thead {
+      background-color: rgba(0, 0, 0, 0.322); }
+      #info #praczkusenosti thead th {
+        padding: 5px 40px 5px 40px; }
+    #info #praczkusenosti tbody {
+      background-color: rgba(0, 0, 0, 0.155); }
+      #info #praczkusenosti tbody td {
+        padding: 5px 40px 5px 40px; }
+  #info h3 {
+    color: #596157;
+    width: 40%;
+    margin-bottom: 10px;
+    line-height: 1;
+    font-family: "Russo One";
+    font-size: 1.3;
+    -webkit-box-shadow: inset 0px -15px 0px -9px #F8C630;
+    -moz-box-shadow: inset 0px -15px 0px -9px #F8C630;
+    box-shadow: inset 0px -15px 0px -9px #F8C630; }
+
+#id {
+  margin: auto; }
+
+i {
+  font-size: 3rem; }
