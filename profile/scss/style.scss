@@ -97,7 +97,7 @@ $tborder: 1px solid $color2;
     
     cursor: crosshair;
     width: 30%;
-    margin: 5% 10px 0 30px;
+    margin: 5% 10px 20px 30px;
     thead{
         background-color: $color1;
         
@@ -133,6 +133,8 @@ $tborder: 1px solid $color2;
 
 
 }
+}
+
 h2{
     color: $color1;
     line-height: 1.5;
@@ -142,7 +144,7 @@ h2{
     font-size: 1.3rem;
     margin:auto;
     border-bottom: 2px solid $color3;
-}}
+}
 
 #info{
     height: 97.8vh;
@@ -188,3 +190,24 @@ h3{
 i{
         font-size: 3rem;
     }
+
+ul {
+    list-style-type: "🌼";
+    width: 90%;
+    margin-left: 2%;
+}
+
+#kontakt{
+    margin-top: 40px;
+    padding-top: 30px;
+
+    background-color: rgba(214, 210, 210, 0.329);
+    h2{
+        width: 40%;
+        margin:auto;
+    }
+    .formular{
+        width: 50%;
+        margin: auto;
+    }
+}
