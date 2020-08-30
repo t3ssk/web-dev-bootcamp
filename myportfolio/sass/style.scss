@@ -8,9 +8,13 @@ $darkpurple: #503047;
 /*General*/
 body{
     font-family: "Cabin", sans-serif;
-    font-size: 17px;
+    font-size: 16px;
 }
-
+hr {
+    width: 6%;
+    border-top: none;
+    border-bottom: 5px dotted $myrtlegreen;
+}
 /*Page hero*/
 #hero{
 
@@ -37,7 +41,102 @@ body{
     filter: drop-shadow(4px 0px 20px rgba(0, 0, 0, 0.247));
     animation: arrival 0.3s ease-in;
 }
+/*Profile section*/
+.profile{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: transparentize($mustard, 0.9);
+    h2{
+        margin-top: 5%;
+        font-size: 3rem;
+        color: $mustard;
+    }
+    p{
+        opacity: 0.8;
+        margin-top: 1%;
+    }
+    #a02f2390-8fa7-48a9-96f1-2ec5f63ecbc1{
+        width: 15%;
+        margin-top:-15%;
+    }
+    hr{
+        margin-top: -15%;
+        margin-bottom: 5%;
+    }
+}
+/*Skills*/
+.skills{
+    width: 90%;
+    margin: auto;
+    h2{
+        margin-top: 5%;
+        text-align: center;
+        font-size: 3rem;
+        color: $myrtlegreen;
+    }
+    svg{
+        width: 100px;
+        height: 100px;
+    }
+    h3{
+        margin-top: 5%;
+        text-align: center;
+        font-size: 2rem;
+        color: $darkpurple; 
+    }
+}
 
+/*KOntakt*/
+.contact-me{
+    background-color: $myrtlegreen;
+    color: $aeroblue;
+    text-align: center;
+    h2{
+        margin-top: 5%;
+        padding-top: 5%;
+        text-align: center;
+        font-size: 2rem;
+        color: white; 
+    }
+    h3{
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: white;
+    }
+    h3, p{
+        width: 50%;
+        margin: auto;
+        padding-top: 1%;
+    }
+    a{
+        color: $salmonpink;
+        margin-bottom: 5%;
+    }
+    a:hover{
+        color: $aeroblue;
+        text-decoration: underline;
+        text-decoration-color: $salmonpink;
+    }
+}
+
+/*Bottom*/
+.bottom-container{
+    width: 95%;
+    margin-top: 2%;
+    padding-left: 3%;
+
+    i{
+        font-size: 3rem;
+        color: $salmonpink;
+    }
+}
+
+footer{
+    background-color: $mustard;
+    font-size: 0.4rem;
+}
 /*Animation*/
 @keyframes arrival {
     0%{
