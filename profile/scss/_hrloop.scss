@@ -14,8 +14,11 @@ camo: $color5);
 
     @each $name, $color in $colors {
         .hr-#{$name}
-         {border: 1px solid $color;
-            width: 50%;
+         {  border-top: none;
+            border-left: none;
+            border-right: none;
+             border-bottom: 10px dotted $color;
+            width: 3%;
             margin:auto;}
     }
 

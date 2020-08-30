@@ -44,28 +44,43 @@ table {
   border-spacing: 0; }
 
 .hr-blue {
-  border: 1px solid #93B7BE;
-  width: 50%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 10px dotted #93B7BE;
+  width: 3%;
   margin: auto; }
 
 .hr-violet {
-  border: 1px solid #542344;
-  width: 50%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 10px dotted #542344;
+  width: 3%;
   margin: auto; }
 
 .hr-rose {
-  border: 1px solid #BC9CB0;
-  width: 50%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 10px dotted #BC9CB0;
+  width: 3%;
   margin: auto; }
 
 .hr-yellow {
-  border: 1px solid #F8C630;
-  width: 50%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 10px dotted #F8C630;
+  width: 3%;
   margin: auto; }
 
 .hr-camo {
-  border: 1px solid #596157;
-  width: 50%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 10px dotted #596157;
+  width: 3%;
   margin: auto; }
 
 body {
@@ -184,8 +199,7 @@ h2 {
   background-color: #93B7BE;
   padding-left: 1%; }
   #info #praczkusenosti {
-    margin: 40px 0px 40px 0;
-    top: -30px; }
+    margin: 40px 0px 40px 0; }
     #info #praczkusenosti thead {
       background-color: rgba(0, 0, 0, 0.322); }
       #info #praczkusenosti thead th {
@@ -194,6 +208,8 @@ h2 {
       background-color: rgba(0, 0, 0, 0.155); }
       #info #praczkusenosti tbody td {
         padding: 5px 40px 5px 40px; }
+  #info #kontakty {
+    margin-bottom: 20px; }
   #info h3 {
     color: #596157;
     width: 40%;
