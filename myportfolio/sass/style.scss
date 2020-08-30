@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Corben:wght@700&display=swap');@import "reset.scss";
+$aeroblue: #BDEDE0;
+$salmonpink: #EF959D;
+$mustard: #E2C044;
+$myrtlegreen: #1D7874;
+$darkpurple: #503047;
+
+/*General*/
+body{
+    font-family: "Cabin", sans-serif;
+    font-size: 17px;
+}
+
+/*Page hero*/
+#hero{
+
+    padding-top: 3%;
+    padding-left: 5%;
+    text-align: center;
+    h1{
+        font-family: "Corben";
+        font-weight: 900;
+        font-size: 4.5rem;
+        color: $myrtlegreen;
+        margin-left: -15%;
+    }
+    p{
+        margin-top: 2%;
+        margin-left: 41%;
+        color: $mustard;
+        opacity: 0.7;
+    }
+    #b8a77818-6ab0-46b3-bde5-d559b2498a42{
+        width: 40%;
+        margin-top: -10%;
+    }
+    filter: drop-shadow(4px 0px 20px rgba(0, 0, 0, 0.247));
+    animation: arrival 0.3s ease-in;
+}
+
+/*Animation*/
+@keyframes arrival {
+    0%{
+        opacity: 0;
+    }
+}
