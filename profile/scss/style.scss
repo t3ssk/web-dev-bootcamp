@@ -26,8 +26,8 @@ body {
 .photo-rounded::before{
     content: ' ';
     position: absolute;
-    background: rgb(147,183,190);
-    background: linear-gradient(51deg, rgba(147,183,190,1) 0%, rgba(188,156,176,1) 53%, rgba(248,198,48,1) 100%);
+    background: radial-gradient(circle at 20% 20%, #FFFFFF 0%, #000000 100%), conic-gradient($color1, $color2, $color3, $color1, $color5, fuchsia, red);
+    background-blend-mode: color-dodge, normal;
     width: 200px;
     height: 200px;
     margin-top: 30px;

@@ -100,8 +100,8 @@ body {
 .photo-rounded::before {
   content: ' ';
   position: absolute;
-  background: #93b7be;
-  background: linear-gradient(51deg, #93b7be 0%, #bc9cb0 53%, #f8c630 100%);
+  background: radial-gradient(circle at 20% 20%, #FFFFFF 0%, #000000 100%), conic-gradient(#93B7BE, #542344, #BC9CB0, #93B7BE, #596157, fuchsia, red);
+  background-blend-mode: color-dodge, normal;
   width: 200px;
   height: 200px;
   margin-top: 30px;
