@@ -15,11 +15,15 @@ function handleClick(){
 
 var sounds = ["sounds/crash.mp3", "sounds/kick-bass.mp3", "sounds/snare.mp3", "sounds/tom-1.mp3", "sounds/tom-2.mp3", "sounds/tom-3.mp3", "sounds/tom-4.mp3"]
 for (var i=0; i<document.querySelectorAll(".drum").length; i++){
-    document.querySelectorAll("button")[i].addEventListener("click",function(){keySound(this.innerHTML)})
+    document.querySelectorAll(".drum")[i].addEventListener("click",function(){keySound(this.innerHTML);
+        activeButCol(this.innerHTML)})
 }
 
+
+
 document.addEventListener ("keydown", function(event){
-    keySound(event.key)
+    keySound(event.key);
+    activeButCol (event.key);
 })
 
 function clickSound (audioFile) {
@@ -59,3 +63,13 @@ function keySound (key) {
         
     }
 }
+
+function activeButCol (keypress) {
+    var activeButton = document.querySelector("." + keypress);
+    var attribute = keypress + "drum pressed"
+    activeButton.classList.add("pressed")
+
+    setTimeout(function(){activeButton.classList.remove("pressed")}, 100)
+}
+
+
