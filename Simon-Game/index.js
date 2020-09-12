@@ -77,12 +77,21 @@ function checkIfSame (currentLevel) {
         }
     } 
     else { 
-        
-        console.log('no')
+        let audioWrong = new Audio('sounds/wrong.mp3')
+        audioWrong.play()
+        $('body').addClass('game-over')
+        setTimeout(function(){$('body').removeClass('game-over')}, 200)
+        $('h1').text('Game over, press any key to restart')
+        startOver()
         }
 }
 
-
+function startOver(){
+    level = 0;
+    keypressed = false;
+    userClickedPattern = [];
+    gamePattern = [];
+}
 
 
 
