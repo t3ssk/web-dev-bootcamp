@@ -6,11 +6,11 @@ document.querySelector('.img2').setAttribute("src", arr[randomNum2])
 
 function getWinner() {
     if(randomNum > randomNum2){
-        return "🏅Player 1 wins!"
+        return "Pavlína má pravdu"
     } else if (randomNum < randomNum2){
-        return "Player 2 wins!🏅"
+        return "Adam má pravdu"
     } else {
-        return "🤷🏻‍♀️It's a tie!🤷🏻‍♀️"
+        return "🤷🏻‍♀️Pravda je někde uprostřed🤷🏻‍♀️"
     }
 }
 document.querySelector("h1").innerHTML = getWinner()
