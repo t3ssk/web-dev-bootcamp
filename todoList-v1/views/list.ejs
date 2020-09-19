@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<title>To-do list</title>
+</head>
+<body>
+  
+        <h1 class="text-center" > <%= kindOfDay %> <%= date %></h1>
+    
+     <h2 class="text-center">musíš ještě udělat:</h2>
+     <div class="bg-light w-50 m-auto">
+        <ul class="py-3">
+            <%for (let i=0; i<coudelat.length; i++){%>
+            <li class="my-3"><%=coudelat[i]%></li>
+                <%}%>
+            <li>
+                <form action="/" method="POST">
+                    <input type="text" name="todo" id="todo" placeholder ="Co máš ještě udělat?">
+                    <button type="submit" name="submit" class="btn btn-secondary">Připíchni</button>
+                </form>
+            </li>
+        </ul>
+     </div>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
