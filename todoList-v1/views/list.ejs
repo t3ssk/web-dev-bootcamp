@@ -7,26 +7,30 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/styles.css">
 <title>To-do list</title>
 </head>
 <body>
-  
-        <h1 class="text-center" > <%= kindOfDay %> <%= date %></h1>
-    
-     <h2 class="text-center">musíš ještě udělat:</h2>
-     <div class="bg-light w-50 m-auto">
+    <div class="box" id="heading">
+        <h1 > <%= kindOfDay %> <%= date %></h1>
+    </div>
+
+     <div class="box">
         <ul class="py-3">
             <%for (let i=0; i<coudelat.length; i++){%>
-            <li class="my-3"><%=coudelat[i]%></li>
+            <div class="item">
+                <input type="checkbox">
+            <p><%=coudelat[i]%></p>
+            </div>
                 <%}%>
-            <li>
-                <form action="/" method="POST">
-                    <input type="text" name="todo" id="todo" placeholder ="Co máš ještě udělat?">
-                    <button type="submit" name="submit" class="btn btn-secondary">Připíchni</button>
-                </form>
-            </li>
+           
         </ul>
+    
+                <form action="/" method="POST" class="item">
+                    <input type="text" name="todo" id="todo" placeholder ="Co máš ještě udělat?" autocomplete="off">
+                    <button type="submit" name="submit" >+</button>
+                </form>
+          
      </div>
     
 
