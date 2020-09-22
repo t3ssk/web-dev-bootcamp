@@ -61,18 +61,18 @@ app.get('/posts/:topic', function(req,res){
   for(obj in poststats){
   title = poststats[obj].title
   if (_.kebabCase(topic) === _.kebabCase(title)){
-    console.log('Match found')
-  }
-  res.render('post', {
-        title: poststats[obj].title,
-        post: poststats[obj].body,
-  })}
+    res.render('post', {
+      title: poststats[obj].title,
+      post: poststats[obj].body,
+})
+  }}
   
 })
 app.post('/compose', function(req,res){
   const post = {
     title: req.body.title,
-    body: _.truncate(req.body.blogpost, {'length': 300, 'separator': " "}),
+    excerpt: _.truncate(req.body.blogpost, {'length': 300, 'separator': " "}),
+    body: req.body.blogpost,
     link: '/posts/'+ _.kebabCase(req.body.title)
   }
   poststats.push(post)
