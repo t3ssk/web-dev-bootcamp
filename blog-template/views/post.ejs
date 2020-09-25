@@ -3,6 +3,11 @@
 
 <h2><%= title %></h2>
 <p><%= post %></p>
-
+<form action="/delete" method="post">
+    <input type="radio" name="delete" value="<%=id%>" checked>
+<button type="submit" name="submit">
+Delete
+</button>
+</form>
 <%- include('partials/footer'); -%>
 

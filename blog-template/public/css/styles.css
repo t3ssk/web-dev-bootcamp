@@ -98,3 +98,9 @@ button{
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+  input[name="delete"]{
+    position: absolute;
+    left: 5000px;
+    overflow: hidden;
+}
