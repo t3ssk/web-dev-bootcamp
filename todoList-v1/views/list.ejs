@@ -12,23 +12,29 @@
 </head>
 <body>
     <div class="box" id="heading">
-        <h1 > <%= kindOfDay %> <%= date %></h1>
+        <h1 > <%= kindOfDay %></h1>
     </div>
 
      <div class="box">
         <ul class="py-3">
-            <%for (let i=0; i<coudelat.length; i++){%>
-            <div class="item">
-                <input type="checkbox">
-            <p><%=coudelat[i]%></p>
-            </div>
-                <%}%>
+                    <%coudelat.forEach((item)=>{%>
+                        <form action="/delete" method="POST">
+                            <div class="item">
+                                <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
+                                <input type="hidden" name="listName" value="<%=kindOfDay%>">
+                                <p><%=item.item%></p>
+                            </div>
+                        </form>
+                    <%})%>
+
+
+         
            
         </ul>
     
                 <form action="/" method="POST" class="item">
                     <input type="text" name="todo" id="todo" placeholder ="Co máš ještě udělat?" autocomplete="off">
-                    <button type="submit" name="submit" >+</button>
+                    <button type="submit" name="list" value="<%=kindOfDay%>" >+</button>
                 </form>
           
      </div>
